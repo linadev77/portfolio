@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miranto Lina Raherison — Développeur web full stack</title>
+  <meta name="description" content="Portfolio de Miranto Lina Raherison, développeur web full stack : WordPress, PHP/MySQL, JavaScript, Vue.js.">
+  <meta name="theme-color" content="#17181c">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <div class="site" id="site">
+
+    <!-- ============ BARRE LATÉRALE ============ -->
+    <header class="sidebar">
+      <div class="sidebar__top">
+        <a class="avatar" href="#home" data-page-link aria-label="Retour à l’accueil">
+          <img src="images/photo.jpg" alt="Portrait de Miranto Lina Raherison" width="132" height="132">
+        </a>
+        <div class="identity">
+          <p class="identity__name">Miranto Lina Raherison</p>
+          <p class="identity__role">Développeur web full stack</p>
+        </div>
+        <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#home" data-page="home"><i class="fas fa-home" aria-hidden="true"></i><span>Accueil</span></a></li>
+          <li><a href="#about" data-page="about"><i class="fas fa-user" aria-hidden="true"></i><span>À propos</span></a></li>
+          <li><a href="#resume" data-page="resume"><i class="fas fa-file-alt" aria-hidden="true"></i><span>Mon CV</span></a></li>
+          <li><a href="#portfolio" data-page="portfolio"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Réalisations</span></a></li>
+          <li><a href="#contact" data-page="contact"><i class="fas fa-envelope" aria-hidden="true"></i><span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__bottom">
+        <ul class="social" aria-label="Réseaux">
+          <!-- À VÉRIFIER : remplacez ces adresses par vos vrais profils -->
+          <li><a href="https://www.facebook.com/search/top?q=Ranto%20Raherison" target="_blank" rel="noopener" aria-label="Facebook : Ranto Raherison"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/linamiranto" target="_blank" rel="noopener" aria-label="LinkedIn : Linamiranto"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:rantoraherison42@gmail.com" aria-label="Envoyer un e-mail"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+        <p class="copy">© <span id="year">2026</span> Miranto Lina Raherison</p>
+      </div>
+    </header>
+
+    <!-- ============ CONTENU ============ -->
+    <main class="main" id="main">
+
+      <!-- ACCUEIL -->
+      <section class="page page--home active" id="home" aria-labelledby="home-title" data-title="Accueil">
+        <div class="home__inner">
+          <p class="home__hello">Bonjour, je suis</p>
+          <h1 class="home__name" id="home-title" tabindex="-1">Miranto Lina <span class="nowrap">Raherison</span></h1>
+          <p class="visually-hidden">Développeur web full stack</p>
+          <p class="home__role" aria-hidden="true">
+            <span class="typed" id="typed" data-roles='["Développeur web full stack","Développeur WordPress","Intégrateur web","Développeur back / front"]'>Développeur web full stack</span><span class="cursor"></span>
+          </p>
+          <p class="home__lead">Je conçois, intègre et maintiens des sites web rapides et accessibles sur tous les supports, avec WordPress, PHP/MySQL et JavaScript.</p>
+          <div class="home__actions">
+            <a class="btn btn--primary" href="files/CV-RAHERISON-Miranto-Lina.pdf" download><i class="fas fa-download" aria-hidden="true"></i>Télécharger mon CV</a>
+            <a class="btn btn--ghost" href="#contact">Me contacter</a>
+          </div>
+        </div>
+        <pre class="home__code" aria-hidden="true"><code><span class="k">const</span> dev = {
+  nom: <span class="s">"Raherison"</span>,
+  prenom: <span class="s">"Miranto Lina"</span>,
+  poste: <span class="s">"Développeur web full stack"</span>,
+  stack: [<span class="s">"WordPress"</span>, <span class="s">"PHP"</span>, <span class="s">"MySQL"</span>,
+          <span class="s">"JavaScript"</span>, <span class="s">"Vue.js"</span>],
+  langues: [<span class="s">"Malagasy"</span>, <span class="s">"Français"</span>, <span class="s">"Anglais"</span>],
+};</code></pre>
+      </section>
+
+      <!-- À PROPOS -->
+      <section class="page" id="about" aria-labelledby="about-title" data-title="À propos">
+        <h2 class="page-title" id="about-title" tabindex="-1"><span class="page-title__bg" aria-hidden="true">Profil</span>À propos</h2>
+
+        <div class="about">
+          <div class="about__text">
+            <p>Développeur web full stack, je conçois et fais évoluer des sites et des applications web depuis 2022. Je travaille surtout avec WordPress, PHP/MySQL et JavaScript (jQuery, Vue.js), côté back comme côté front.</p>
+            <p>Mon travail va de la création de thèmes et de plugins sur mesure à l’intégration d’interfaces performantes, accessibles sur tous les supports. J’aime analyser l’existant, proposer des améliorations, puis corriger et optimiser pour que chaque site reste rapide et simple à maintenir.</p>
+            <p>Formé à l’Institut de Formation Techniques (IFT), du DTS au Master&nbsp;I en informatique et programmation, je reste attentif aux nouvelles technologies.</p>
+            <p class="about__cta"><a class="btn btn--primary" href="files/CV-RAHERISON-Miranto-Lina.pdf" download><i class="fas fa-download" aria-hidden="true"></i>Télécharger mon CV</a></p>
+          </div>
+
+          <dl class="info">
+            <div><dt>Nom</dt><dd>Miranto Lina Raherison</dd></div>
+            <div><dt>Poste</dt><dd>Développeur web full stack</dd></div>
+            <div><dt>Téléphone</dt><dd><a href="tel:+261347765350">034 77 653 50</a></dd></div>
+            <div><dt>E-mail</dt><dd><a href="mailto:rantoraherison42@gmail.com">rantoraherison42@gmail.com</a></dd></div>
+            <div><dt>Adresse</dt><dd>Ankerakely (La Haute-Ville)</dd></div>
+            <div><dt>Langues</dt><dd>Malagasy, français, anglais</dd></div>
+          </dl>
+        </div>
+
+        <h3 class="block-title"><i class="fas fa-cogs" aria-hidden="true"></i>Ce que je fais</h3>
+        <ul class="services">
+          <li class="service">
+            <span class="service__icon"><i class="fab fa-wordpress" aria-hidden="true"></i></span>
+            <div><h4>Thèmes WordPress</h4><p>Création de thèmes personnalisés et adaptation de thèmes existants aux besoins du site.</p></div>
+          </li>
+          <li class="service">
+            <span class="service__icon"><i class="fas fa-plug" aria-hidden="true"></i></span>
+            <div><h4>Plugins sur mesure</h4><p>Développement et personnalisation de plugins pour ajouter des fonctionnalités précises.</p></div>
+          </li>
+          <li class="service">
+            <span class="service__icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+            <div><h4>Intégration et interfaces</h4><p>Interfaces web performantes, portables et accessibles sur tous les supports.</p></div>
+          </li>
+          <li class="service">
+            <span class="service__icon"><i class="fas fa-tachometer-alt" aria-hidden="true"></i></span>
+            <div><h4>Optimisation et maintenance</h4><p>Bonnes pratiques de performance, débogage, résolution des problèmes d’affichage et correctifs.</p></div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- MON CV -->
+      <section class="page" id="resume" aria-labelledby="resume-title" data-title="Mon CV">
+        <h2 class="page-title" id="resume-title" tabindex="-1"><span class="page-title__bg" aria-hidden="true">Parcours</span>Mon CV</h2>
+
+        <h3 class="block-title"><i class="fas fa-briefcase" aria-hidden="true"></i>Expérience</h3>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__date">Nov. 2023 – 2026</span>
+            <h4 class="timeline__title">Développeur WordPress</h4>
+            <p class="timeline__org">Mbl Service</p>
+            <ul class="bullets">
+              <li>Conception du site de l’entreprise</li>
+              <li>Création de thèmes personnalisés</li>
+              <li>Personnalisation et adaptation de thèmes WordPress existants</li>
+              <li>Ajout de fonctionnalités spécifiques au site</li>
+              <li>Mise en œuvre de bonnes pratiques d’optimisation des performances</li>
+              <li>Débogage et résolution des problèmes d’affichage</li>
+            </ul>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__date">Janv. 2023 – Sept. 2023</span>
+            <h4 class="timeline__title">Développeur web</h4>
+            <p class="timeline__org">Takamoa Studio</p>
+            <ul class="bullets">
+              <li>Refonte de site web et intégration web</li>
+              <li>Analyse des interfaces et propositions d’amélioration</li>
+              <li>Personnalisation de plugins</li>
+              <li>Développement de plugins pour ajouter des fonctionnalités spécifiques</li>
+              <li>Conception et implémentation d’interfaces web performantes</li>
+              <li>Focus sur la portabilité et l’accessibilité sur tous les supports</li>
+              <li>Maintenance et correctifs de bugs</li>
+            </ul>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__date">Janv. 2022 – Déc. 2022</span>
+            <h4 class="timeline__title">Développeur web</h4>
+            <p class="timeline__org">Randev Team</p>
+            <ul class="bullets">
+              <li>Création de sites</li>
+              <li>Alimentation des données agenda / articles (webscraping)</li>
+              <li>Analyse des interfaces et propositions d’amélioration</li>
+              <li>Adaptation et optimisation de sites et d’applications web existants</li>
+              <li>Conception et implémentation d’interfaces web performantes</li>
+              <li>Focus sur la portabilité et l’accessibilité sur tous les supports</li>
+              <li>Maintenance et correctifs de bugs</li>
+            </ul>
+          </li>
+        </ol>
+
+        <div class="cols">
+          <div>
+            <h3 class="block-title"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Formation</h3>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <span class="timeline__date">2018 – 2019</span>
+                <h4 class="timeline__title">Informatique et programmation, Master&nbsp;I</h4>
+                <p class="timeline__org">Institut de Formation Techniques (IFT)</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">2016 – 2017</span>
+                <h4 class="timeline__title">Informatique et programmation, Licence</h4>
+                <p class="timeline__org">Institut de Formation Techniques (IFT)</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">2015 – 2016</span>
+                <h4 class="timeline__title">Informatique et programmation, DTS</h4>
+                <p class="timeline__org">Institut de Formation Techniques (IFT)</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__date">2013 – 2014</span>
+                <h4 class="timeline__title">Baccalauréat, série D</h4>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="block-title"><i class="fas fa-code" aria-hidden="true"></i>Langages et frameworks</h3>
+            <ul class="skills">
+              <li class="skill"><div class="skill__head"><span>HTML / CSS</span><span>100&nbsp;%</span></div><div class="skill__bar" aria-hidden="true"><i style="--level:100"></i></div></li>
+              <li class="skill"><div class="skill__head"><span>PHP / MySQL</span><span>100&nbsp;%</span></div><div class="skill__bar" aria-hidden="true"><i style="--level:100"></i></div></li>
+              <li class="skill"><div class="skill__head"><span>JS / jQuery / Bootstrap</span><span>100&nbsp;%</span></div><div class="skill__bar" aria-hidden="true"><i style="--level:100"></i></div></li>
+              <li class="skill"><div class="skill__head"><span>Vue JS</span><span>85&nbsp;%</span></div><div class="skill__bar" aria-hidden="true"><i style="--level:85"></i></div></li>
+              <li class="skill"><div class="skill__head"><span>CodeIgniter</span><span>75&nbsp;%</span></div><div class="skill__bar" aria-hidden="true"><i style="--level:75"></i></div></li>
+            </ul>
+
+            <h3 class="block-title"><i class="fas fa-layer-group" aria-hidden="true"></i>CMS</h3>
+            <ul class="skills">
+              <li class="skill"><div class="skill__head"><span>WordPress</span><span>95&nbsp;%</span></div><div class="skill__bar" aria-hidden="true"><i style="--level:95"></i></div></li>
+              <li class="skill"><div class="skill__head"><span>PrestaShop</span><span>50&nbsp;%</span></div><div class="skill__bar" aria-hidden="true"><i style="--level:50"></i></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cols">
+          <div>
+            <h3 class="block-title"><i class="fas fa-user-check" aria-hidden="true"></i>Savoir-être</h3>
+            <ul class="bullets bullets--roomy">
+              <li>Fiable et rigoureux</li>
+              <li>Réactif et toujours à la pointe des dernières technologies</li>
+              <li>Enthousiaste et curieux</li>
+              <li>Développement back / front</li>
+              <li>Adaptable, capable de travailler sur des sujets divers</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="block-title"><i class="fas fa-tools" aria-hidden="true"></i>Éditeurs</h3>
+            <ul class="tags"><li>Visual Studio Code</li><li>Sublime Text</li></ul>
+
+            <h3 class="block-title"><i class="fas fa-language" aria-hidden="true"></i>Langues</h3>
+            <ul class="tags"><li>Malagasy</li><li>Français</li><li>Anglais</li></ul>
+
+            <h3 class="block-title"><i class="fas fa-gamepad" aria-hidden="true"></i>Loisirs</h3>
+            <ul class="tags"><li><i class="fas fa-gamepad" aria-hidden="true"></i>Jeux vidéo</li><li><i class="fas fa-music" aria-hidden="true"></i>Musique</li></ul>
+          </div>
+        </div>
+
+        <p class="resume__cta"><a class="btn btn--primary" href="files/CV-RAHERISON-Miranto-Lina.pdf" download><i class="fas fa-download" aria-hidden="true"></i>Télécharger le CV en PDF</a></p>
+      </section>
+
+      <!-- RÉALISATIONS -->
+      <section class="page" id="portfolio" aria-labelledby="portfolio-title" data-title="Réalisations">
+        <h2 class="page-title" id="portfolio-title" tabindex="-1"><span class="page-title__bg" aria-hidden="true">Projets</span>Réalisations</h2>
+        <p class="lead">Une sélection de travaux menés chez mes employeurs successifs. Cliquez sur un projet pour voir le détail.</p>
+        <div class="filters" id="filters" role="group" aria-label="Filtrer les réalisations"></div>
+        <ul class="works" id="works"></ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="page" id="contact" aria-labelledby="contact-title" data-title="Contact">
+        <h2 class="page-title" id="contact-title" tabindex="-1"><span class="page-title__bg" aria-hidden="true">Écrivez-moi</span>Contact</h2>
+
+        <div class="contact">
+          <div class="contact__info">
+            <p class="lead">Un projet, une question, une proposition&nbsp;? Écrivez-moi ou appelez-moi directement.</p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-list__icon"><i class="fas fa-phone-alt" aria-hidden="true"></i></span>
+                <div><span class="contact-list__label">Téléphone</span><a href="tel:+261347765350">034 77 653 50</a></div>
+              </li>
+              <li>
+                <span class="contact-list__icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                <div><span class="contact-list__label">E-mail</span><a href="mailto:rantoraherison42@gmail.com">rantoraherison42@gmail.com</a></div>
+              </li>
+              <li>
+                <span class="contact-list__icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+                <div><span class="contact-list__label">Adresse</span><span>Ankerakely (La Haute-Ville)</span></div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form" id="contact-form">
+            <div class="form__row">
+              <label class="field"><span>Nom</span><input type="text" name="nom" autocomplete="name" required></label>
+              <label class="field"><span>E-mail</span><input type="email" name="email" autocomplete="email" required></label>
+            </div>
+            <label class="field"><span>Sujet</span><input type="text" name="sujet" required></label>
+            <label class="field"><span>Message</span><textarea name="message" rows="6" required></textarea></label>
+            <div class="form__foot">
+              <button class="btn btn--primary" type="submit"><i class="fas fa-paper-plane" aria-hidden="true"></i>Envoyer le message</button>
+              <p class="form__status" id="form-status" role="status"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Fenêtre de détail d'une réalisation -->
+  <dialog class="modal" id="work-modal" aria-labelledby="modal-title">
+    <button class="modal__close" id="modal-close" type="button" aria-label="Fermer"><i class="fas fa-times" aria-hidden="true"></i></button>
+    <div class="modal__media" id="modal-media"></div>
+    <div class="modal__body">
+      <h3 id="modal-title"></h3>
+      <p class="modal__meta" id="modal-meta"></p>
+      <p id="modal-desc"></p>
+      <ul class="tags" id="modal-tags"></ul>
+      <a class="btn btn--primary" id="modal-link" href="#" target="_blank" rel="noopener" hidden><i class="fas fa-external-link-alt" aria-hidden="true"></i>Voir le site</a>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
